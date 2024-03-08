@@ -1,0 +1,442 @@
+@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+
+/* #banner{
+  margin: auto;
+  text-align:center;
+
+} */
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+*{
+  transition: 0.5s;
+}
+header{
+  display:flex;
+  align-items:center;
+  flex:1;
+}
+#logo-div{
+  display:flex;
+}
+#logo-div img{
+  align-items:center;
+  justify-content:center;
+  height:40px;
+  width:40px;
+}
+
+
+#banner{
+  display:flex;
+  padding: 250px;
+  kground-position: center;
+  flex-direction: column;
+
+}
+#animation{
+  display:flex;
+  flex:1;
+  text-align:center;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(
+  180deg,rgba(8, 186, 230, 0.075),rgba(109,2,2, .8)), url("/pacman.gif");
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+}
+#animation h1{
+  text-align:center;
+  color:white;
+  justify-content:center;  
+}
+.title{
+  display:flex;
+  flex:1;
+  justify-content:center;
+  align-items: center;
+  font-family: '8BIT WONDER', sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+
+.title h1{
+  letter-spacing: 12px;
+}
+
+.title h1:hover{
+  letter-spacing: 14px;
+}
+
+/* CSS */
+.title button{
+  font-family:'8BIT WONDER', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  touch-action: manipulation;
+  transition:0.2s;
+}
+
+.title button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    padding: 0.25em 0.75em;
+  }/* 👍 */
+
+}
+
+.box{
+  flex:1;
+  display:flex;
+  background-image: linear-gradient(180deg, rgba(0,0,0, 1), rgba(109,2,2, .8));
+}
+#lower{
+  width:100%;
+}
+#explanation{
+  width:40%;
+  text-align:center;
+  background-image: linear-gradient(180deg, rgba(0,0,0, 1), rgba(109,2,2, .8));
+  padding:50px; 
+
+}/* 👍 */
+
+#decor h2{
+  color:white;
+}
+#decor h1{
+  color:white;
+}
+#decor{
+  height:450px;
+  font-family: '8BIT WONDER', sans-serif;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-style:Sans;
+  color:black;
+  text-align:center;
+  padding:50px;
+  border: solid black 2px 2px;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+}
+
+#screenshot{
+  width:60%;
+  text-align:center;
+  background-image: linear-gradient(180deg, rgba(0,0,0, 1), rgba(109,2,2, .8));
+  padding:50px;
+}
+#screenshot img{
+  width:100%;
+  height:550px;
+  display:flex;
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+}/* 👍 */
+
+
+.PLACEHOLDER{
+  padding:50px;
+  height:100%;/* 👍 */
+  width:100%;
+  text-align:center;
+  background-image: linear-gradient(180deg, rgba(0,0,0, 1), rgba(109,2,2, .8));
+}
+
+.name{
+  display:flex;
+  letter-spacing:5px;
+  background-color:rgb(0,0,0); 
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  border-radius:40px; 
+  padding:10px;
+  margin:0px;/* 👍 */
+  justify-content:center;
+  align-items:center;
+
+}
+/* Final  */
+.display{
+  flex-direction: row;
+  flex-wrap: wrap;
+  position:relative;
+  flex:1;
+  height:260;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+
+  /* width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  object-fit:cover; */
+
+/* .display img .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+} */
+/* .display img:hover .img-top {
+  display: inline;
+}
+ */
+.break{
+  display:flex;
+  align-items:center;
+  flex:1;
+  background-color:black;
+  width:100%;/* 👍 */
+  height:20px;
+}
+#troubleshooting{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: gray;
+}
+
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns:repeat(5,1fr);
+    }/* 👍 */
+}
+
+@media (min-width: 1200px) {
+    .grid {/* 👍 */
+        grid-template-columns:repeat(6,1fr)
+    }
+}/* 👍 */
+
+@media (min-width: 1480px) {
+    .grid {
+        grid-template-columns:repeat(7,1fr)
+    }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  display:flex;
+  background-color: transparent;
+  width: 260px;
+  height: 420px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  margin:10px;
+  padding:10px;/* 👍 */
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  background-color:black;
+}
+
+.flip-card h2{
+  display:flex;
+  letter-spacing:3px;
+  background-color:rgb(0,0,0); 
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  font-size:20px;
+  border-radius:40px; 
+  padding:10px;
+  justify-content:center;/* 👍 */
+  align-items:center;
+}
+
+.flip-card img{
+  margin:0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  object-fit:cover; 
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  /* border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  margin:10px;
+  padding:10px;
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+ */
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover{
+  transform:rotateY(180deg);
+}
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+ */
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-image:url("/blinky.png"); */
+  
+  color: black;
+}/* 👍 */
+
+/* Style the back side */
+.flip-card-back {
+  /* 👍 */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p{
+  font-size:30px;
+  color: white;
+}
+
+.leaderboard{
+  display:flex;
+  width:100%;
+  padding-top:50px;
+  padding-bottom:50px;
+
+  /* background-color:rgb(0,0,0);
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  font-size:20px;
+  justify-content:center;
+  align-items:center;
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  border-radius:40px;  */
+}
+
+.thumbs{
+  /* 👍 */
+  /* LMAO */
+  width:50%;
+  flex-direction:column;
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  font-size:20px;
+  justify-content:center;
+  align-items:center;
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  border-radius:40px;
+  padding:40px;
+  background-color:black;
+  margin:40px;
+}
+#pacman-leaders h1{
+  display:flex;
+  letter-spacing:5px;
+  background-color:rgb(0,0,0); 
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  border-radius:40px; 
+  padding:10px;
+  margin:0px;/* 👍 */
+  justify-content:center;
+  align-items:center;
+}
+#ghost-leaders h1{
+  display:flex;
+  letter-spacing:5px;
+  background-color:rgb(0,0,0); 
+  border-style:solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius:20px;
+  font-family: '8BIT WONDER', sans-serif;
+  color:white;
+  border-radius:40px; 
+  padding:10px;
+  margin:0px;/* 👍 */
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.array{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+body{
+  margin:0px;
+  font-family:Arial;
+  background-image: url("/ghost.gif");
+  background-height:750px;
+  background-position:center;
+}
+
+#login{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%, 0);
+  background-image:linear-gradient(
+  180deg,rgba(14, 71, 93, 1),rgba(107,6,6, 1));
+  padding:10px;
+  border-radius:30px;/* 👍 */
+  width:25%;
+  height:375px;
+}
+
+#login label{
+  display:flex;
+  color:white;
+  text-align: center;
+}/* 👍 */
+
+#current_status{
+  text-align:center;
+  /* text-decoration:underline; */
+  font-family:'8BIT WONDER', sans-serif;
+  color:white;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px; */
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  letter-spacing: 2px;
+}
+
+#current_status_button{
+  /* background-color:#F0F0F0;
+  padding:15px;
+  padding-left:55px;
+  padding-right:55px;
+  margin:25px;
+  border:1px solid #a1a1a1;
+  border-radius:10px;
+  font-size:15px;
+  cursor:pointer; */
+    font-family:'8BIT WONDER', sans-serif;
+    font-size: 15px;
+    text-decoration:uppercase;
+    letter-spacing: 2px;/* 👍 */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    touch-action: manipulation;
+    transition:0.2s;
+  }
+
+@media (min-width: 768px) {
+  #current_status_button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+#current_status_button:active{
+  background-color:#E3E3E3;
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+#switcher_button{
+  color:blue;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+#switcher_button:active{
+  color:#2975f1;
+  text-decoration:underline;
+}
+
+#error_place{
+  text-align:center;
+  color:white;
+}
+
+.section{
+  display:flex;
+  justify-content:center;
+  margin:15px;
+}/* 👍 */
+
+.section div{
+  width:250px;
+}
+/* 👍 */
+.input_box{
+  outline: none !important;
+  padding:10px;
+  border:0px solid black;
+  border-radius:10px;
+  transition:0.1s;
+  width:230px;
+}
+
+.input_box:focus{
+  background-color:#c8d9dd;
+  border:0px solid black;
+}
+
+@media (max-width: 1200px) {
+  #login{
+    position:absolute;
+    left:50%;
+    top:0%;
+    transform:translate(-50%, 0);
+    background-color:#e8e8e8;
+    padding:10px;
+    border-radius:30px;
+    width:100%;
+    height:100%;
+  }/* 👍 */
+  #error_place{
+    position:relative;
+    z-index:5;
+  }
+}

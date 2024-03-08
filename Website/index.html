@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>A-Frame Game Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="/script.js"></script>
+    <script src="/components.js"></script>
+    <!-- Julian was here -->
+    <!-- NO ELIJAH WAS -->
+    <link rel="stylesheet" href="/components.css" type="text/css"></link>
+    <link rel="stylesheet" href="/homepage.css"></link>
+    <link rel="stylesheet" href="/style.css"></link>
+  </head>
+  <body>
+    <header>
+      <div id="logo-div">
+        <img src="/pacty.png">
+      </div>
+      <div id="account-div"> 
+
+        <a id="account">Log In</a>
+        <div id="account-dropdown">
+          <p onclick="logOut()">Log Out</p>
+        </div>
+      </div>
+    </header>
+    <!-- <div id="banner"> -->
+      <div id="animation"> 
+        <div class="title">
+          <div>
+            <h1>PACMAN HORROR</h1>
+            <button id="mainButton" onclick="window.location.href='/login'">Sign Up/Log In</button>
+          </div>
+        </div>
+
+        <!-- IMPORTANT -->
+        <!-- If on Firefox, make sure "Enhanced Tracking Protection" is OFF -->
+
+      </div>
+    <!-- </div> -->
+    <!--This is the home page, and the place to log in. Once logged in, store user token into cookie. Token would be matched with the API to obtain userID. UserID would be used in the a-frame game to identity users.  -->
+    <div class="box" id="lower">
+      <div id="explanation">
+        <div id="decor">
+        <!-- <h2>
+      This page' s primary function is to have a place to log in. Once logged in, the user token will be stored into a cookie. In which the Token would be matched with the API to obtain a userID, the userID would be used in the game to identify users.</h2> -->
+        <h1>
+      Objective
+        </h1>
+        <h2>Pacman goes around the maze collecting keys and avoids the ghosts to win</h2><br>
+        <h2>Ghosts hunt down Pacman before he/she collects the necessary keys</h2>
+        </div>
+      </div>
+
+      <div id="screenshot">
+        
+      </div>
+    </div>
+
+
+      <div class="box">
+
+        <div class="PLACEHOLDER">
+          <h1 class="name">Leaderboard</h1>
+           <div id="leaderboard">
+             
+           </div>
+
+          <h1 class="name">Gallery</h1>
+            <div id="gallery" class="display row" style="grid-row-end:span 4">
+
+              <!-- <div class="grid">
+                <h2>Powerup</h2>
+                <div>
+                <img src="/bomb.png">
+                </div>
+                <div>Monkey go kabaam</div>
+              </div>
+ -->
+              <div class="flip-card grid">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Powerup</h2>
+                    <img src="/bomb.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Wall Destroyer</h2>
+                    <p>IT GOES KABOOM</p>
+                    <p>BREAKS WALAL</p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="flip-card grid">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Powerup</h2>
+                    <img src="/bomb.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Wall Destroyer</h2>
+                    <p>IT GOES KABOOM</p>
+                    <p>BREAKS WALAL</p>
+                  </div>
+                </div>
+              </div> -->
+              <div class="flip-card grid">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Powerup</h2>
+                    <img src="/glass.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>X-RAY</h2>
+                    <p>Pacman exclusive</p>
+                    <p>Pacman is able to see through the wall for a duration of time</p>
+                    <p>Time: nth</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card grid">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>CHARACTER</h2>
+                    <img src="/pacty.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>PACMAN</h2>
+                    <p>OBJECTIVE:</p>
+                    <p>Avoid ghosts and collects keys</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card grid">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>CHARACTER</h2>
+                    <img src="/blinky.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>GHOSTS</h2>
+                    <p>OBJECTIVE:</p>
+                    <p>4 ghosts hunts down Pacman before Pacman collects he necessary keys</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    <div class="break"></div>
+
+    <div id="troubleshooting">
+        <div id="content">
+          <h1> If you're facing client side issues while trying to get into the game please do these steps:</h1>
+
+          <hr>
+          <h2>Issue 1: Game continously redirects you to the homepage.</h2>
+          <h2>Solution: Turn off enhanced tracking protection in your browser. This allows your browser to use cross-site cookies.</h2>
+          <hr>
+          <h2>Issue 2: Game isn't loading in assets</h2>
+          <h2>Solution: The server isn't on. Please notify a server admin to start the server, and refresh the game.</h2>
+        </div>
+    </div>
+
+  </body>
+</html>

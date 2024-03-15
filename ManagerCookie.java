@@ -5,7 +5,7 @@ import com.sun.net.httpserver.HttpExchange;
 //https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 public class ManagerCookie{
   private static Logger lg = new Logger();
-  private static String url = "f2166e48-2864-40b5-b38a-00a461eb243a-00-j15vqjkvw7bk.riker.replit.dev";
+  private static String url = "f2166e48-2864-40b5-b38a-00a461eb243a-00-j15vqjkvw7bk.riker.repl.co";
   public static String getValue(HttpExchange exchange, String key){
     String cook;
     try{

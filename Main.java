@@ -13,7 +13,7 @@ import java.io.Writer;
 
 class Main {
   private static Logger lg = new Logger();
-  public static String[] gameURL = {"https://a-frame-multiplayer-game-elijah15976.replit.app", "https://a-frame-multiplayer-game-lobby-2-elijah15976.replit.app", "https://a-frame-multiplayer-game-lobby-3-elijah15976.replit.app"};
+  public static String[] gameURL = {"48b09dc7-e9b7-4a1c-b3f7-f27f96ed5e29-00-2lap5e65rigp1.kirk.repl.co"};
   public static void main(String[] args) throws IOException{
     int port = 8080;
     Database db = new Database("jdbc:sqlite:accounts.db");

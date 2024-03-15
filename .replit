@@ -60,3 +60,7 @@ mainClass = "Main"
 [deployment]
 deploymentTarget = "static"
 publicDir = "/"
+
+[[ports]]
+localPort = 8080
+externalPort = 80

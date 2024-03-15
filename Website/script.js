@@ -25,7 +25,7 @@ window.onload = function(){
       styleSheet.innerText = accountStyle;
       document.head.appendChild(styleSheet);
       document.getElementById("mainButton").innerHTML = "Play Now";
-      document.getElementById("mainButton").setAttribute("onclick", "window.location.href='https://a-frame-multiplayer-game-elijah15976.replit.app/'");
+      document.getElementById("mainButton").setAttribute("onclick", "window.location.href='https://48b09dc7-e9b7-4a1c-b3f7-f27f96ed5e29-00-2lap5e65rigp1.kirk.repl.co'");
     }
   }
 
@@ -64,7 +64,7 @@ function galleryImages(){
     images.push(`/maze.png`);
     images.push(`/josh.jpg`);
     images.push(`/maze2.png`);
-    images.push(`/maze3.png`);
+    // images.push(`/maze3.png`);
     images.push(`/lobby.png`);
     images.push(`/lobby2.png`);
 
